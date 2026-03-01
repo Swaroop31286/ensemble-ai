@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = AsyncOpenAI(api_key=os.getenv("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"))
+client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 async def get_openai_response(prompt: str) -> str:

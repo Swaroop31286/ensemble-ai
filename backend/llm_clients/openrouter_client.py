@@ -11,7 +11,7 @@ async def get_openrouter_response(prompt: str) -> str:
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     headers = {
-        "Authorization": f"Bearer {"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"}",
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
         "HTTP-Referer": "http://localhost:5173",
         "X-Title": "EnsembleAI",
